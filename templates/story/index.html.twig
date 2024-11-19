@@ -13,7 +13,10 @@
     </div>
    <div>
         {% for choice in choices %}
-            <a href="">{{ choice.content }}</a>
+            <a href="/story/{{ choice.id_message_next }}">{{ choice.content }}</a>
         {% endfor %}
+    </div>
+    <div>
+        <a href="/back">Retour</a>
     </div>
 {% endblock %}
